@@ -3,10 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Index Page</title>
+    <meta name="description" content="This is the index page for Wdd 131 - Dynamic Web Fundamentals by Spencer Lowe.">
+    <meta name="author" content="Spencer Lowe">
+    <title>Wdd 131 - Dynamic Web Fundamentals - Spencer Lowe</title>
+    <link rel="stylesheet" href="styles/base.css">
+
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a basic index page.</p>
+<header>
+    <h1>Wdd 131 - Dynamic Web Fundamentals - Spencer Lowe</h1>
+    <nav>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/spencerlowe87/">LinkedIn</a></li>
+            <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/3?lang=eng&id=p16#p16">Scripture</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="card1">
+        <h2>About Me</h2>
+        <img src="images/spencerlowe.jfif" alt="Spencer Lowe" width="300">
+        <p>My name is Spencer Lowe. I am a student at Brigham Young University - Idaho. I am studying Web Design and Development. I am currently taking Wdd 131 - Dynamic Web Fundamentals. I am excited to learn more about web development and design as I pursue a degree in Software Engineering.</p>
+
+        <aside>
+            <h3>Lehi, Utah, United States of America</h3>
+            <div class="city">
+                <figure class="cityflag">
+                    <img src="images/lehi.gif" alt="Lehi, Utah" width="300">
+                    <figcaption>Current flag of the city of Lehi, Utah, United States of America</figcaption>
+                </figure>
+            </div>
+        </aside>
+    </section>
+    <section class="card2">
+        <h2> Web Dev Resources</h2>
+        <u1 class="weblinks">
+            <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+            <li><a href="https://www.freecodecamp.org/">Free Code Camp</a></li>
+            <li><a href="https://www.codecademy.com/">Codecademy</a></li>
+            <li><a href="https://www.udemy.com/">Udemy</a></li>
+        </u1>
+    </section>
+</main>
+<footer>
+<p>&copy; <span id="currentyear"></span> Spencer Lowe, Utah, USA</p>
+<p id="lastModified"></p>
+<script>
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
+</script>
+</footer>
 </body>
 </html>
